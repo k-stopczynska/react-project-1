@@ -1,6 +1,6 @@
 import Expenses from './components/Expenses';
 
-export const expenses = [
+const expenses = [
   {
     id: "e1",
     title: "Toilet Paper",
@@ -26,7 +26,7 @@ function App() {
   return (
     <div>
     <h2>Let's get started!</h2>
-    <Expenses />
+    <Expenses items={expenses}/>
     </div>
   );
 }
